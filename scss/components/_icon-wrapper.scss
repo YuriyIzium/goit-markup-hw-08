@@ -1,0 +1,31 @@
+.icon-wrapper {
+  @extend %centreFlex;
+
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+
+  &__bg--white {
+    background-color: var(--primary-white);
+    fill: var(--fill-social-icons);
+    transition: fill 250ms var(--timing-function),
+      background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      fill: var(--primary-white);
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__bg--greey {
+    background-color: var(--bg-icon-greey);
+    fill: var(--primary-white);
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      background: var(--accent-color);
+    }
+  }
+}

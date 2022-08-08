@@ -1,0 +1,37 @@
+.features {
+  @include section();
+
+  &__block {
+    --set-item: 1;
+
+    @media (min-width: 768px) {
+      --set-item: 2;
+    }
+
+    @media (min-width: 1200px) {
+      --set-item: 4;
+    }
+  }
+
+  &__icon-wrapper {
+    @extend %centreFlex;
+    height: 120px;
+    margin-bottom: 30px;
+
+    border-radius: 4px;
+    background-color: var(--team-bg-cl);
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--title-collor);
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
