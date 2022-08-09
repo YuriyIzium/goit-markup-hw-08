@@ -1,5 +1,5 @@
 .features {
-  @include section();
+
 
   &__block {
     --set-item: 1;
@@ -27,7 +27,12 @@
 
     font-size: 14px;
     text-transform: uppercase;
+	 text-align: center;
     color: var(--title-collor);
+
+	 @media (min-width: 768px) {
+    text-align: start;
+    }
   }
 
   &__text {

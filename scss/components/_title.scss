@@ -1,6 +1,12 @@
 .title {
   text-align: center;
-  font-size: 36px;
-  line-height: 1.16;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
   color: var(--title-collor);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }

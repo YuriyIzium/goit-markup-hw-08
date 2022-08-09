@@ -1,15 +1,25 @@
 .team {
   background-color: var(--team-bg-cl);
-  @include section();
+
 
   &__block {
-    margin-top: 50px;
-    --set-item: 4;
+	margin-top: 30px;
+	--set-item: 1;
+
+	@media (min-width: 768px) {
+	  --set-item: 2;
+	}
+
+	@media (min-width: 1200px) {
+		margin-top: 50px;
+	  --set-item: 4;
+	}
   }
 }
 
 .team-card {
-  @extend %centreFlex;
+@extend %centreFlex;
+width: 450px;
   flex-direction: column;
   padding-bottom: 30px;
 

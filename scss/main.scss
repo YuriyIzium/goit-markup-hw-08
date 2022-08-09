@@ -1,11 +1,11 @@
 @import "./utils/variables";
 @import "./utils/base";
 @import "./utils/hidden";
-@import "./utils/mixins";
 @import "./utils/placeholders";
 
 @import "./layouts/container";
 @import "./layouts/backdrop";
+@import "./layouts/section";
 
 @import "./components/header";
 @import "./components/logo";

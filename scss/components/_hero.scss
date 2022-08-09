@@ -3,9 +3,8 @@ $hero-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 .hero {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,6 +34,9 @@ $hero-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 
   @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+	 padding-top: 200px;
+	 padding-bottom: 200px;
     background-image: $hero-gradient, url("../images/hero/desk-hero-img.jpg");
 
     @media (min-device-pixel-ratio: 2),
@@ -58,7 +60,7 @@ $hero-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     color: var(--primary-white);
 
     @media screen and (min-width: 1200px) {
-		max-width: 696px;
+      max-width: 696px;
       font-size: 44px;
       line-height: 1.36;
     }
@@ -68,8 +70,9 @@ $hero-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     @extend %button;
     margin: 0 auto;
     transition: background-color 250ms var(--timing-function);
-	 @media screen and (min-width: 1200px) {
-		max-width: 216px;
+	 
+    @media screen and (min-width: 1200px) {
+      max-width: 216px;
     }
 
     &:hover,

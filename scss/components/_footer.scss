@@ -1,6 +1,7 @@
 .footer {
+	padding: 60px 0;
   background-color: var(--secondery-bg);
-  @include section(60px, 60px);
+
 
   &__inner {
     display: flex;

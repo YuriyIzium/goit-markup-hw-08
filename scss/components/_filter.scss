@@ -1,7 +1,10 @@
 .filter {
   gap: 8px;
   @extend %centreFlex;
-  @include section(94px, 50px);
+
+  @media (min-width: 1200px) {
+	padding: 94px 0 50px;}
+
 
   &__btn {
     font-family: inherit;
