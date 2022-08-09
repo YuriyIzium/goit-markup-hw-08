@@ -148,6 +148,7 @@
   background-color: transparent;
   cursor: pointer;
   z-index: 100;
+  transition: fill 250ms var(--timing-function);
 
   &:hover {
     fill: var(--accent-color);

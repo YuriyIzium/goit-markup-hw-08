@@ -346,6 +346,8 @@ body {
   background-color: transparent;
   cursor: pointer;
   z-index: 100;
+  -webkit-transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 .mobile-button:hover {
   fill: var(--accent-color);
@@ -534,6 +536,11 @@ body {
 .work {
   padding-top: 0;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 767px) {
+  .work {
+    display: none;
+  }
 }
 .work__block {
   margin-top: 50px;

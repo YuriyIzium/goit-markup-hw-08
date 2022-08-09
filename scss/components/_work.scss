@@ -1,5 +1,7 @@
 .work {
-  @include section(0);
+	@media screen and (max-width: 767px) {
+		display: none;}
+	@include section(0);
 
   &__block {
     margin-top: 50px;
@@ -28,3 +30,4 @@
     color: var(--primary-white);
   }
 }
+
