@@ -179,12 +179,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
 
     &.is-open {
       display: block;
       padding: 48px 39px;
-		width: 100vw;
+		
     }
   }
 

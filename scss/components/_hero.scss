@@ -1,3 +1,5 @@
+$hero-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -9,29 +11,66 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondery-bg);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero-img.jpg");
+
+  @media screen and (max-width: 767px) {
+    background-image: $hero-gradient, url("../images/hero/mobile-hero-img.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: $hero-gradient,
+        url("../images/hero/mobile-hero-img@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: $hero-gradient, url("../images/hero/tablet-hero-img.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: $hero-gradient,
+        url("../images/hero/tablet-hero-img@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: $hero-gradient, url("../images/hero/desk-hero-img.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: $hero-gradient,
+        url("../images/hero/desk-hero-img@2x.jpg");
+    }
+  }
 
   &__title {
-    max-width: 696px;
+    max-width: 360px;
     margin: 0 auto 30px;
-    text-align: center;
 
-    color: var(--primary-white);
+    text-align: center;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--primary-white);
+
+    @media screen and (min-width: 1200px) {
+		max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__btn {
     @extend %button;
     margin: 0 auto;
     transition: background-color 250ms var(--timing-function);
+	 @media screen and (min-width: 1200px) {
+		max-width: 216px;
+    }
 
     &:hover,
     &:focus {
