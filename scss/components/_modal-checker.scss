@@ -1,34 +1,44 @@
 .modal-checker {
-  position: relative;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
   text-align: center;
-  font-size: 14px;
-  line-height: 1.71;
-  margin-left: 24px;
+  font-size: 12px;
+  line-height: 1.16;
+
+  @media screen and (max-width: 479px) {
+    display: inline-flex;
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   &__custom {
-    position: absolute;
-    left: -12px;
-    top: 50%;
-    transform: translateY(-50%);
     width: 16px;
     height: 15px;
     border: 2px solid black;
     border-radius: 2px;
+    margin-right: 5px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 8px;
+    }
 
     transition: background-color 250ms var(--timing-function);
-
-    .modal-checker__def:checked + & {
-      border-color: var(--accent-color);
-      background-color: var(--accent-color);
-    }
-    .modal-checker__def:focus + & {
-      border: 2px solid var(--accent-color);
-    }
+  }
+  .modal-checker__def:checked + & {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+  }
+  .modal-checker__def:focus + & {
+    border: 2px solid var(--accent-color);
   }
 
   &__contract {
-    display: inline-block;
+    display: contents;
     color: var(--accent-color);
   }
 }
