@@ -5,10 +5,18 @@
   width: 100%;
   height: 100%;
   z-index: 300;
-  padding: 93px 15px 94px;
+  padding: 94px 15px;
 
   overflow-y: scroll;
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
   background-color: var(--backdrop-cl);
+
+  &.is-hidden .modal {
+	transform: translate(-50%, -50%) scale(0.7);
+ }
 }
+
+
+
+
