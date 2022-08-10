@@ -1,9 +1,14 @@
 .filter {
+	display: flex;
+	align-items: center;
   gap: 8px;
-  @extend %centreFlex;
+  flex-wrap: wrap;
 
-  @media (min-width: 1200px) {
-	padding: 94px 0 50px;}
+  &__margin {
+	margin-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+	margin-bottom: 50px;}
+  }
 
 
   &__btn {
