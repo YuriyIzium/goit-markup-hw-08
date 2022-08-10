@@ -41,10 +41,12 @@
 	  top: 0;
 	  left: 0;
 	  width: 100vw;
+	  height: 100vh;
 	 padding: 48px 39px;
  
 	  &.is-open {
-		 display: block;
+		 display: flex;
+		 flex-direction: column;
 		 z-index: 100;   
 	  }
 	}
