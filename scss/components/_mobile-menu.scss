@@ -8,7 +8,7 @@
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
-	z-index: 100;
+	z-index: 200;
 	transition: fill 250ms var(--timing-function);
  
 	&:hover {
@@ -44,7 +44,8 @@
 	 padding: 48px 39px;
  
 	  &.is-open {
-		 display: block;   
+		 display: block;
+		 z-index: 100;   
 	  }
 	}
  
