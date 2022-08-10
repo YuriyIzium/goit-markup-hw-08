@@ -1,8 +1,8 @@
 .modal-checker {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
-  text-align: center;
+  gap: 5px;
+  justify-content: center;
   font-size: 12px;
   line-height: 1.16;
 
@@ -21,15 +21,11 @@
     height: 15px;
     border: 2px solid black;
     border-radius: 2px;
-    margin-right: 5px;
-
-    @media screen and (min-width: 1200px) {
-      margin-right: 8px;
-    }
 
     transition: background-color 250ms var(--timing-function);
   }
-  .modal-checker__def:checked + & {
+
+  .modal-checker__def:checked + &__custom {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
   }
