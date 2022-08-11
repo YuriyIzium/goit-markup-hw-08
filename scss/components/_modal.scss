@@ -2,7 +2,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	z-index: 300;
+	z-index: 40;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
   overflow-y: auto;
