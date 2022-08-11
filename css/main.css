@@ -203,10 +203,8 @@ body {
     width: 100%;
   }
 }
-@media screen and (max-width: 767px) {
-  .header__nav {
-    margin-bottom: auto;
-  }
+.header__nav {
+  margin-bottom: auto;
 }
 @media screen and (min-width: 768px) {
   .header__nav {
